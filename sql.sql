@@ -2,10 +2,6 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
-CREATE DATABASE IF NOT EXISTS `database_notes` DEFAULT CHARACTER SET utf8 COLLATE utf8_polish_ci;
-USE `database_notes`;
-
-
 --
 -- Struktura tabeli dla tabeli `notes`
 --
@@ -17,5 +13,6 @@ CREATE TABLE IF NOT EXISTS `notes` (
   `now` int(11) NOT NULL,
   `timeout` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci AUTO_INCREMENT=1;
+
 
