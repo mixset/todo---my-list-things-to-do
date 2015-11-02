@@ -11,7 +11,6 @@ Aplikacja została napisana za pomocą języka server-side PHP oraz technologii 
 
 Główny rdzeń skryptu został zawarty w pliku todo.class.php
 
-
 Sposób instalacji
 -----------------
 
@@ -19,9 +18,8 @@ Aby zainstalować skrypt należy otworzyć plik config.ini a następnie:
 - W pole host wpisać nazwę naszego hosta, na naszym lokalnym serverze jest to *localhost*
 - W pole user wpisać nazwę użytkownika, na naszym lokalnym serverze jest to *root*
 - W pole password wpisać nasze hasło do bazy danych, na naszym lokalnym serverze zazwyczaj hasła nie ma
-- Pole db_name najlepiej pozostawić bez zmian, chybe, że majsterkuje sie przy nazwie bazy danych
-- Pole db_table jw. 
-- Uwaga! W pole address_name wpisać adres strony. Aby poprawnie uzupełnić to pole przekopiuj zawartość kodu: `echo $_SERVER['HTTP_HOST']` w miejsce do tego przeznaczne w pliku config.ini
+- Pole db_name najlepiej pozostawić bez zmian. W przeciwnym przypadku należy zadbać, aby nazwa bazy danych pokrywalo sie z tym w bazie danych
+- Pole db_table zawiera nazwe tabeli, w której przechowywane beda notatki. 
 
 Changelog
 --------
