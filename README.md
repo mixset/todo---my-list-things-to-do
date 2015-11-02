@@ -1,4 +1,4 @@
-#Lista ToDo, czyli moja lista rzeczy do zrobienia
+##Lista ToDo, czyli moja lista rzeczy do zrobienia
 =========================
 
 Skrypt pozwala zapisywaać rzeczy do zrobienia. Skrypt zawiera takie funkcje jak:
