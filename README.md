@@ -50,14 +50,14 @@ Changelog
 - Metoda setData w klasie todo pobiera dane z pliku config.ini
 - Poprawa działania metody *editNote*
 - Baza danych tworzy się automatycznie: nowa regułka w pliku *sql.sql*
-- Dodano button **wróć** na podstronie edycji notatki
+- Dodano button *wróć* na podstronie edycji notatki
 
 [02.11.2015]
 - usunięto: `if(constant('SCRIPT') == false) die('Skrypt zablokowany!');`
 - dodano komentarze, które zostały napisanie zgodnie ze wskazaniami PHPdoc.
 - usunięto warunek sprawdzający wartośc funkcji get_magic_quotes_gpc()
-- usunięto warunek porównujący wartość **$_SERVER['HTTP_HOST']** ze zmienną **$this -> address_name**
-- dodano dwie prywatne właściwości: **$notifications** z powiadomieniami oraz **$config** z ustawieniami
+- usunięto warunek porównujący wartość *$_SERVER['HTTP_HOST']* ze zmienną *$this -> address_name*
+- dodano dwie prywatne właściwości: *$notifications* z powiadomieniami oraz *$config* z ustawieniami
 - usunięto metodę setData
 - dodano metodę dbConnection(), isNoteExist()
 - optymalizacja html i js
