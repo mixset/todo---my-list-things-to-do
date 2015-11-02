@@ -1,4 +1,4 @@
-﻿Lista ToDo, czyli moja lista rzeczy do zrobienia
+﻿##Lista ToDo, czyli moja lista rzeczy do zrobienia
 =========================
 
 Skrypt pozwala zapisywaać rzeczy do zrobienia. Skrypt zawiera takie funkcje jak:
@@ -11,17 +11,15 @@ Aplikacja została napisana za pomocą języka server-side PHP oraz technologii 
 
 Główny rdzeń skryptu został zawarty w pliku todo.class.php
 
-
 Sposób instalacji
 -----------------
 
 Aby zainstalować skrypt należy otworzyć plik config.ini a następnie:
-- W pole host wpisać nazwę naszego hosta, na naszym lokalnym serverze jest to *localhost*
-- W pole user wpisać nazwę użytkownika, na naszym lokalnym serverze jest to *root*
-- W pole password wpisać nasze hasło do bazy danych, na naszym lokalnym serverze zazwyczaj hasła nie ma
-- Pole db_name najlepiej pozostawić bez zmian, chybe, że majsterkuje sie przy nazwie bazy danych
-- Pole db_table jw. 
-- Uwaga! W pole address_name wpisać adres strony. Aby poprawnie uzupełnić to pole przekopiuj zawartość kodu: `echo $_SERVER['HTTP_HOST']` w miejsce do tego przeznaczne w pliku config.ini
+- W pole **host** wpisać nazwę naszego hosta, na naszym lokalnym serverze jest to *localhost*
+- W pole **user** wpisać nazwę użytkownika, na naszym lokalnym serverze jest to *root*
+- W pole **password** wpisać nasze hasło do bazy danych, na naszym lokalnym serverze zazwyczaj hasła nie ma
+- Pole **db_name** najlepiej pozostawić bez zmian. W przeciwnym przypadku należy zadbać, aby nazwa bazy danych pokrywała sie z nazwą w bazie danych
+- Pole **db_table** zawiera nazwe tabeli, w której przechowywane beda notatki. 
 
 Changelog
 --------
@@ -41,6 +39,16 @@ Changelog
 - Poprawa działania metody *editNote*
 - Baza danych tworzy się automatycznie: nowa regułka w pliku *sql.sql*
 - Dodano button *wróć* na podstronie edycji notatki
-- 
+
+[02.11.2015]
+- usunięto: `if(constant('SCRIPT') == false) die('Skrypt zablokowany!');`
+- dodano komentarze, które zostały napisanie zgodnie ze wskazaniami PHPdoc.
+- usunięto warunek sprawdzający wartośc funkcji get_magic_quotes_gpc()
+- usunięto warunek porównujący wartość **$_SERVER['HTTP_HOST']** ze zmienną **$this -> address_name**
+- dodano dwie prywatne właściwości: **$notifications** z powiadomieniami oraz **$config** z ustawieniami
+- usunięto metodę setData
+- dodano metodę dbConnection(), isNoteExist()
+- optymalizacja html i js
+- dodano datepicker
 
 [Demo Skryptu](http://skryptoteka.rynko.pl/moja-lista-todo-czyli-lista-rzeczy-do-zrobienia)
