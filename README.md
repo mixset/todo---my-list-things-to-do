@@ -38,7 +38,7 @@ Changelog
 - Metoda setData w klasie todo pobiera dane z pliku config.ini
 - Poprawa działania metody *editNote*
 - Baza danych tworzy się automatycznie: nowa regułka w pliku *sql.sql*
-- Dodano button *wróć* na podstronie edycji notatki
+- Dodano button **wróć** na podstronie edycji notatki
 
 [02.11.2015]
 - usunięto: `if(constant('SCRIPT') == false) die('Skrypt zablokowany!');`
