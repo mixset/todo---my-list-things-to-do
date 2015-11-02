@@ -1,4 +1,4 @@
-Lista ToDo, czyli moja lista rzeczy do zrobienia
+﻿Lista ToDo, czyli moja lista rzeczy do zrobienia
 =========================
 
 Skrypt pozwala zapisywaać rzeczy do zrobienia. Skrypt zawiera takie funkcje jak:
@@ -16,12 +16,12 @@ Sposób instalacji
 -----------------
 
 Aby zainstalować skrypt należy otworzyć plik config.ini a następnie:
-1. W pole host wpisać nazwę naszego hosta, na naszym lokalnym serverze jest to *localhost*
-2. W pole user wpisać nazwę użytkownika, na naszym lokalnym serverze jest to *root*
-3. W pole password wpisać nasze hasło do bazy danych, na naszym lokalnym serverze zazwyczaj hasła nie ma
-4. Pole db_name najlepiej pozostawić bez zmian, chybe, że majsterkuje sie przy nazwie bazy danych
-5. Pole db_table jw. 
-6. Uwaga! W pole address_name wpisać adres strony. Aby poprawnie uzupełnić to pole przekopiuj zawartość kodu: `echo $_SERVER['HTTP_HOST']` w miejsce do tego przeznaczne w pliku config.ini
+- W pole host wpisać nazwę naszego hosta, na naszym lokalnym serverze jest to *localhost*
+- W pole user wpisać nazwę użytkownika, na naszym lokalnym serverze jest to *root*
+- W pole password wpisać nasze hasło do bazy danych, na naszym lokalnym serverze zazwyczaj hasła nie ma
+- Pole db_name najlepiej pozostawić bez zmian, chybe, że majsterkuje sie przy nazwie bazy danych
+- Pole db_table jw. 
+- Uwaga! W pole address_name wpisać adres strony. Aby poprawnie uzupełnić to pole przekopiuj zawartość kodu: `echo $_SERVER['HTTP_HOST']` w miejsce do tego przeznaczne w pliku config.ini
 
 Changelog
 --------
