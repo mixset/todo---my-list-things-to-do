@@ -56,10 +56,10 @@ Changelog
 - usunięto: `if(constant('SCRIPT') == false) die('Skrypt zablokowany!');`
 - dodano komentarze, które zostały napisanie zgodnie ze wskazaniami PHPdoc.
 - usunięto warunek sprawdzający wartośc funkcji get_magic_quotes_gpc()
-- usunięto warunek porównujący wartość *$_SERVER['HTTP_HOST']* ze zmienną *$this -> address_name*
-- dodano dwie prywatne właściwości: *$notifications* z powiadomieniami oraz *$config* z ustawieniami
+- usunięto warunek porównujący wartość `$_SERVER['HTTP_HOST']` ze zmienną `$this -> address_name`
+- dodano dwie prywatne właściwości: `$notifications` z powiadomieniami oraz `$config` z ustawieniami
 - usunięto metodę setData
-- dodano metodę dbConnection(), isNoteExist()
+- dodano metodę `dbConnection()`, `isNoteExist()`
 - optymalizacja html i js
 - dodano datepicker
 
