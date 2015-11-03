@@ -1,63 +1,53 @@
-##Lista ToDo, czyli moja lista rzeczy do zrobienia
-
+##ToDo list, my list things to do
 =========================
 
-Skrypt pozwala zapisywaać rzeczy do zrobienia. Skrypt zawiera takie funkcje jak:
-- zmiana statusu zadania na *zrobione* i *aktualne*
-- edycja notatek
-- usuwanie notatek
+Script allows to store things, which should be done. Script includes such functions like:
+- task status changing for *done* and *current*
+- posibility of edition and deleting notes
 - ustawianie czasu wygaśnięcia
+- setting time of expiration
 
-Aplikacja została napisana za pomocą języka server-side PHP oraz technologii AJAX. Szkielet strony został stworzony dzięki frameworkowi [Twitter Boostrap](http://getbootstrap.com/2.3.2/)
+This app has been writing using server-side PHP language and AJAX technology. Appearance of website has been creating using framework Twitter Boostrap(http://getbootstrap.com/2.3.2/)
 
-Główny rdzeń skryptu został zawarty w pliku todo.class.php
+Main core of the system is included in *todo.class.php* file. 
 
-Sposób instalacji
+How to install?
 -----------------
 
-Aby zainstalować skrypt należy otworzyć plik config.ini a następnie:
+To install script, you have to open *config.ini* file, next you have to:
 
-- W pole **host** wpisać nazwę naszego hosta, na naszym lokalnym serverze jest to *localhost*
-- W pole **user** wpisać nazwę użytkownika, na naszym lokalnym serverze jest to *root*
-- W pole **password** wpisać nasze hasło do bazy danych, na naszym lokalnym serverze zazwyczaj hasła nie ma
-- Pole **db_name** najlepiej pozostawić bez zmian. W przeciwnym przypadku należy zadbać, aby nazwa bazy danych pokrywała sie z nazwą w bazie danych
-- Pole **db_table** zawiera nazwe tabeli, w której przechowywane beda notatki
-
-=======
-- W pole host wpisać nazwę naszego hosta, na naszym lokalnym serverze jest to *localhost*
-- W pole user wpisać nazwę użytkownika, na naszym lokalnym serverze jest to *root*
-- W pole password wpisać nasze hasło do bazy danych, na naszym lokalnym serverze zazwyczaj hasła nie ma
-- Pole db_name najlepiej pozostawić bez zmian. W przeciwnym przypadku należy zadbać, aby nazwa bazy danych pokrywalo sie z tym w bazie danych
-- Pole db_table zawiera nazwe tabeli, w której przechowywane beda notatki. 
+- As a **host** write down name of our host, defaulty it it is *localhost*
+- As a **user** write down user name. On localhost, it is *root*
+- As a **password** fill up with your password to database. On localhost, password is empty
+- **db_name** leave without changes. If you want to change name of database, you have to change name in database, too.
+- **db_table** consist name of table, where notes will be stored. 
 
 Changelog
 --------
 [03.05.2013]
-- Optymalizacja kodu CSS
-- Dodanie aria-label dla buttonów
-- Optymalizacja kodu HTML
-- Optymalizacja pliku script.js
-- Dodano funkcję checkdatę
-- Dodano metodę setData()
-- Kilka przeróbek w klasie todo
-- Dodano pole "Rozpoczęto" w tabeli 
+- HTML&CSS code optymalization
+- aria-label added for buttons
+- script.js file has been optymalized
+- A new functions has been added: *checkdate()* and *setData()*
+- Some less important changes in todo.class.php file.
+- *Rozpoczęto* field has been added to table in website.
 
 [30.06.2014]
-- Dane potrzebne do uruchomienia skryptu znajdują się w pliku config.ini
-- Metoda setData w klasie todo pobiera dane z pliku config.ini
-- Poprawa działania metody *editNote*
-- Baza danych tworzy się automatycznie: nowa regułka w pliku *sql.sql*
-- Dodano button *wróć* na podstronie edycji notatki
+- Config data nessesary to start script has been moved to config.ini file 
+- *setData()* method gets config date from config.ini file. 
+- *editNote()* method has been dubuged.
+- Database creates automatically: a new rule in sql.sql file 
+- *Wróc* button has been added in note edition page
 
 [02.11.2015]
-- usunięto: `if(constant('SCRIPT') == false) die('Skrypt zablokowany!');`
-- dodano komentarze, które zostały napisanie zgodnie ze wskazaniami PHPdoc.
-- usunięto warunek sprawdzający wartośc funkcji get_magic_quotes_gpc()
-- usunięto warunek porównujący wartość `$_SERVER['HTTP_HOST']` ze zmienną `$this -> address_name`
-- dodano dwie prywatne właściwości: `$notifications` z powiadomieniami oraz `$config` z ustawieniami
-- usunięto metodę setData
-- dodano metodę `dbConnection()`, `isNoteExist()`
-- optymalizacja html i js
-- dodano datepicker
+- Removed; `if(constant('SCRIPT') == false) die('Skrypt zablokowany!');`
+- Comments have been added according to PHPDOC instructions
+- Removed statement checking value of get_magic_quotes_gpc() function
+- Removed statement comparing value of `$_SERVER['HTTP_HOST']` with variable `$this -> address_name`
+- Two private properties have been added:  `$notifications` and `$config`
+- Removed `setData()` method 
+- Two methods have been added: `dbConnection()` and `isNoteExist()`
+- HTML & JS code optymalization
+- Added datepicker
 
 [Demo Skryptu](http://skryptoteka.rynko.pl/moja-lista-todo-czyli-lista-rzeczy-do-zrobienia)
