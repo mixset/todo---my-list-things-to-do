@@ -1,5 +1,5 @@
 ##ToDo list, my list things to do
-=========================
+-----------------
 
 Script allows to store tasks, which should be done. Script includes such functions like:
 - task status changing for *done* and *current*
