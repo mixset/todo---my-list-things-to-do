@@ -21,7 +21,8 @@ Aby zainstalować skrypt należy otworzyć plik config.ini a następnie:
 - W pole **user** wpisać nazwę użytkownika, na naszym lokalnym serverze jest to *root*
 - W pole **password** wpisać nasze hasło do bazy danych, na naszym lokalnym serverze zazwyczaj hasła nie ma
 - Pole **db_name** najlepiej pozostawić bez zmian. W przeciwnym przypadku należy zadbać, aby nazwa bazy danych pokrywała sie z nazwą w bazie danych
-- Pole **db_table** zawiera nazwe tabeli, w której przechowywane beda notatki. 
+- Pole **db_table** zawiera nazwe tabeli, w której przechowywane beda notatki
+
 =======
 - W pole host wpisać nazwę naszego hosta, na naszym lokalnym serverze jest to *localhost*
 - W pole user wpisać nazwę użytkownika, na naszym lokalnym serverze jest to *root*
