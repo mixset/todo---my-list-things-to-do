@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-﻿##Lista ToDo, czyli moja lista rzeczy do zrobienia
-=======
 ##Lista ToDo, czyli moja lista rzeczy do zrobienia
->>>>>>> 1011c9d44c6635919a39edbf14474adcfca6665e
+
 =========================
 
 Skrypt pozwala zapisywaać rzeczy do zrobienia. Skrypt zawiera takie funkcje jak:
@@ -19,7 +16,7 @@ Sposób instalacji
 -----------------
 
 Aby zainstalować skrypt należy otworzyć plik config.ini a następnie:
-<<<<<<< HEAD
+
 - W pole **host** wpisać nazwę naszego hosta, na naszym lokalnym serverze jest to *localhost*
 - W pole **user** wpisać nazwę użytkownika, na naszym lokalnym serverze jest to *root*
 - W pole **password** wpisać nasze hasło do bazy danych, na naszym lokalnym serverze zazwyczaj hasła nie ma
@@ -31,7 +28,6 @@ Aby zainstalować skrypt należy otworzyć plik config.ini a następnie:
 - W pole password wpisać nasze hasło do bazy danych, na naszym lokalnym serverze zazwyczaj hasła nie ma
 - Pole db_name najlepiej pozostawić bez zmian. W przeciwnym przypadku należy zadbać, aby nazwa bazy danych pokrywalo sie z tym w bazie danych
 - Pole db_table zawiera nazwe tabeli, w której przechowywane beda notatki. 
->>>>>>> 1011c9d44c6635919a39edbf14474adcfca6665e
 
 Changelog
 --------
