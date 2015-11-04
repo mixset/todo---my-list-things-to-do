@@ -6,7 +6,7 @@ Script allows to store tasks, which should be done. Script includes such functio
 - posibility of edition and deleting notes
 - setting time of expiration
 
-This app has been writing using server-side PHP language and AJAX technology. Appearance of website has been created using framework Twitter Boostrap(http://getbootstrap.com/2.3.2/)
+This app has been written using server-side PHP language and AJAX technology. Appearance of website has been created using framework Twitter Boostrap(http://getbootstrap.com/2.3.2/)
 
 Main core of the system is included in *todo.class.php* file. 
 
