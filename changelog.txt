@@ -1,0 +1,29 @@
+[28-04-2013] - v1.0
++ Pierwsza wersja projektu
+
+[03.05.2013] - v1.1
++ Optymalizacja kodu CSS
++ Dodanie aria-label dla buttonów
++ Optymalizacja kodu HTML
++ Optymalizacja pliku script.js
++ Dodano funkcję checkdate
++ Dodano metodę setData()
++ Kilka przeróbek w klasie todo
++ Dodano pole "Rozpoczęto" w tabeli
+
+[30.06.2014] - v1.2
++ Dane potrzebne do uruchomienia skryptu znajdują się w pliku config.ini
++ Metoda setData w klasie todo pobiera dane z pliku config.ini
++ Poprawa działania metody editNote
++ Baza danych tworzy się automatycznie: nowa regułka w pliku sql.sql
+
+[12.02.2017] - v1.3
++ Plik config.ini został zastąpiony plikiem config.php
++ Utworzono hierarchie folderów
++ Dodano klasę Engine oraz Logger
++ Zmieniono nazwę klasy ToDo na ToDoList oraz poddano ją optymalizacji
++ Layout strony został podzielony na: header.php, footer.php oraz poszczególne podstrony
++ Usunięto plik action.php a jego zawartość przeniesiono do template/index.php
++ Zoptymalizowano plik script.js
++ Komunikaty znajdują się w plikach JSON
++ Usunięto pusty div[id=log] i zastąpiono go pluginem alertify

@@ -1,0 +1,40 @@
+h1 a:hover {
+    text-decoration: none;
+}
+
+.action_row {
+    width: 150px;
+}
+
+.date_row {
+    width: 110px;
+}
+
+.font-change {
+    font-size: 110%;
+}
+
+td:nth-child(2), td:nth-child(3) {
+    text-align: center !important;
+}
+
+.status_row {
+    width: 70px;
+}
+
+#edit_note {
+    text-align: center;
+}
+
+.note_text {
+    max-width: 400px;
+    word-wrap: break-word
+}
+
+#notetext, #notetext_edit {
+    width: 400px;
+}
+
+footer {
+    margin-top: 160px;
+}
